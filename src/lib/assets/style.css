@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Lexend;
+    src: url($lib/assets/Lexend/Lexend-VariableFont_wght.ttf);
+}
+
+:root{
+    --accent: rgb(255, 0, 119);
+    --bg-r: 40;
+    --bg-g: 25;
+    --bg-b: 35;
+    --fg-change: 20;
+    --bg: rgb(var(--bg-r), var(--bg-g), var(--bg-b));
+    --fg: rgb(calc(var(--bg-r) + var(--fg-change)), calc(var(--bg-g) + var(--fg-change)), calc(var(--bg-b) + var(--fg-change)));
+}
+
+body{
+    margin: 0;
+    background: var(--bg);
+    color: white;
+    font-family: Lexend;
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+a, button{
+    all: unset;
+    cursor: pointer;
+}
+
+.hoz-scroll{
+    white-space: nowrap;
+    overflow-x: auto;
+}
